@@ -97,6 +97,74 @@
             transform: scale(1.1);
             opacity: 0.8;
         }
+
+        /* Media Queries para hacer el diseño responsivo */
+        @media (max-width: 768px) {
+            .album {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .album img {
+                max-width: 100px;
+            }
+
+            .album-info {
+                max-width: 100%;
+            }
+
+            .duko {
+                width: 90%;
+                left: 5%;
+            }
+
+            .pokemon {
+                width: 35%; /* Ajusta el tamaño de las imágenes de Gengar y Gastly */
+            }
+
+            .gengar {
+                top: 10px; /* Ajusta la posición superior */
+                left: 0; /* Centra la imagen */
+            }
+
+            .gastly {
+                top: 10px; /* Ajusta la posición superior */
+                right: 0; /* Centra la imagen */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pokemon {
+                width: 40%; /* Ajusta el tamaño de las imágenes de Gengar y Gastly */
+                top: 5px; /* Ajusta la posición superior */
+            }
+
+            .gengar {
+                left: 5%; /* Ajusta la posición izquierda */
+            }
+
+            .gastly {
+                right: 5%; /* Ajusta la posición derecha */
+            }
+
+            .album img {
+                max-width: 80px;
+            }
+
+            .duko {
+                width: 100%;
+                left: 0;
+            }
+
+            header {
+                padding: 10px 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
