@@ -97,6 +97,51 @@
             transform: scale(1.1);
             opacity: 0.8;
         }
+
+        /* Media Queries para hacer el diseño responsivo */
+        @media (max-width: 768px) {
+            .album {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .album img {
+                max-width: 100px;
+            }
+
+            .album-info {
+                max-width: 100%;
+            }
+
+            .duko {
+                width: 90%;
+                left: 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pokemon {
+                display: none; /* Oculta las imágenes de Gengar y Gastly en pantallas pequeñas */
+            }
+
+            .album img {
+                max-width: 80px;
+            }
+
+            .duko {
+                width: 100%;
+                left: 0;
+            }
+
+            header {
+                padding: 10px 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -166,4 +211,4 @@
         </div>
     </main>
 </body>
-</html>
+</html
